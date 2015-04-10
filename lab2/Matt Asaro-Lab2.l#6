@@ -1943,7 +1943,13 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <gate name="G$1" symbol="LSH.1301.9315" x="0" y="-2.54"/>
 </gates>
 <devices>
-<device name="" package="LSH.1301.9315">
+<device name="1301" package="LSH.1301.9315">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$3"/>
+<connect gate="G$1" pin="3" pad="P$2"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

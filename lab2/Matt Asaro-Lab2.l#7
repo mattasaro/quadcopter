@@ -1855,7 +1855,7 @@ Source: http://www.osram.convergy.de/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BUTTON-TACTILE" prefix="S">
+<deviceset name="BUTTON-TACTILE" prefix="S" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="TS2" x="0" y="0"/>
 </gates>
@@ -1866,6 +1866,17 @@ Source: http://www.osram.convergy.de/</description>
 <connect gate="G$1" pin="P1" pad="P2"/>
 <connect gate="G$1" pin="S" pad="S"/>
 <connect gate="G$1" pin="S1" pad="S2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SQUARE2" package="LSH.1301.9315">
+<connects>
+<connect gate="G$1" pin="P" pad="P$1"/>
+<connect gate="G$1" pin="P1" pad="P$3"/>
+<connect gate="G$1" pin="S" pad="P$2"/>
+<connect gate="G$1" pin="S1" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1932,7 +1943,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <gate name="G$1" symbol="LSH.1301.9315" x="0" y="-2.54"/>
 </gates>
 <devices>
-<device name="">
+<device name="1301" package="LSH.1301.9315">
 <technologies>
 <technology name=""/>
 </technologies>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -665,21 +665,19 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </packages>
 <symbols>
 <symbol name="LSH.1301.9315">
-<pin name="1" x="-7.54" y="5.08" visible="off" length="middle" direction="pas"/>
-<pin name="3" x="-7.54" y="-2.54" visible="pad" length="middle" direction="pas"/>
-<pin name="2" x="7.54" y="5.08" visible="off" length="middle" direction="pas" rot="R180"/>
-<pin name="4" x="7.54" y="-2.54" visible="off" length="middle" direction="pas" rot="R180"/>
+<pin name="1" x="-7.62" y="5.08" visible="off" length="middle"/>
+<pin name="3" x="-7.62" y="-2.54" visible="pad" length="middle"/>
+<pin name="2" x="7.62" y="5.08" visible="off" length="middle" rot="R180"/>
+<pin name="4" x="7.62" y="-2.54" visible="off" length="middle" rot="R180"/>
 <wire x1="0" y1="-2.54" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="5.08" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="0.46" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0.46" y1="5.08" x2="0.54" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1" y2="2" width="0.254" layer="94"/>
 <circle x="0" y="0" radius="0.1" width="0.3" layer="94"/>
 <circle x="0" y="2.4" radius="0.1" width="0.3" layer="94"/>
-<wire x1="3" y1="5.08" x2="0.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="3" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
 <text x="-7" y="3" size="1.27" layer="94">1</text>
 <text x="7" y="3" size="1.27" layer="94">2</text>
 <text x="-7" y="-1" size="1.27" layer="94">3</text>
@@ -691,14 +689,14 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <devicesets>
 <deviceset name="1301">
 <gates>
-<gate name="G$1" symbol="LSH.1301.9315" x="0" y="-2.54"/>
+<gate name="G$1" symbol="LSH.1301.9315" x="0" y="0"/>
 </gates>
 <devices>
 <device name="1301" package="LSH.1301.9315">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$3"/>
-<connect gate="G$1" pin="3" pad="P$2"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
 <connect gate="G$1" pin="4" pad="P$4"/>
 </connects>
 <technologies>
@@ -722,7 +720,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="J1" library="Lab2" deviceset="2.1MMJACK" device="THM"/>
 <part name="LED1" library="Lab2" deviceset="LED" device="5MM" value="Red"/>
 <part name="R1" library="Lab2" deviceset="RESISTOR" device="AXIAL-0.3" value="330Ohms"/>
-<part name="SWITCH" library="Matt Asaro-Lab2" deviceset="1301" device="1301"/>
+<part name="U$1" library="Matt Asaro-Lab2" deviceset="1301" device="1301"/>
 </parts>
 <sheets>
 <sheet>
@@ -732,7 +730,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="J1" gate="G$1" x="20.32" y="40.64"/>
 <instance part="LED1" gate="G$1" x="35.56" y="53.34" rot="R90"/>
 <instance part="R1" gate="G$1" x="58.42" y="53.34"/>
-<instance part="SWITCH" gate="G$1" x="45.72" y="40.64"/>
+<instance part="U$1" gate="G$1" x="45.72" y="40.64"/>
 </instances>
 <busses>
 </busses>
@@ -749,7 +747,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="63.5" y1="53.34" x2="66.04" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="53.34" x2="66.04" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="4"/>
 <wire x1="66.04" y1="38.1" x2="53.34" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="38.1" x2="53.34" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -765,7 +765,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <net name="N$3" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="RING"/>
+<pinref part="U$1" gate="G$1" pin="3"/>
 <wire x1="25.4" y1="38.1" x2="38.1" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="1"/>
 <wire x1="38.1" y1="38.1" x2="38.1" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
