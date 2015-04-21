@@ -1158,6 +1158,121 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="lab4">
+<packages>
+<package name="LSM9DS0">
+<wire x1="-2" y1="1.9" x2="1.9" y2="1.9" width="0.127" layer="51"/>
+<wire x1="1.9" y1="1.9" x2="1.9" y2="-2" width="0.127" layer="51"/>
+<wire x1="1.9" y1="-2" x2="-2" y2="-2" width="0.127" layer="51"/>
+<wire x1="-2" y1="-2" x2="-2" y2="1.9" width="0.127" layer="51"/>
+<smd name="P$4" x="0.25" y="-2.15" dx="1.35" dy="0.2" layer="1" rot="R90"/>
+<smd name="P$3" x="-0.25" y="-2.15" dx="1.35" dy="0.2" layer="1" rot="R90"/>
+<smd name="P$2" x="-0.75" y="-2.15" dx="1.35" dy="0.2" layer="1" rot="R90"/>
+<smd name="P$1" x="-1.25" y="-2.15" dx="1.35" dy="0.2" layer="1" rot="R90"/>
+<smd name="P$5" x="0.75" y="-2.15" dx="1.35" dy="0.2" layer="1" rot="R90"/>
+<smd name="P$6" x="1.25" y="-2.15" dx="1.35" dy="0.2" layer="1" rot="R90"/>
+<smd name="P$15" x="0.25" y="2.15" dx="1.35" dy="0.2" layer="1" rot="R90"/>
+<smd name="P$16" x="-0.25" y="2.15" dx="1.35" dy="0.2" layer="1" rot="R90"/>
+<smd name="P$17" x="-0.75" y="2.15" dx="1.35" dy="0.2" layer="1" rot="R90"/>
+<smd name="P$18" x="-1.25" y="2.15" dx="1.35" dy="0.2" layer="1" rot="R90"/>
+<smd name="P$14" x="0.75" y="2.15" dx="1.35" dy="0.2" layer="1" rot="R90"/>
+<smd name="P$13" x="1.25" y="2.15" dx="1.35" dy="0.2" layer="1" rot="R90"/>
+<smd name="P$10" x="2.15" y="0.25" dx="1.35" dy="0.2" layer="1" rot="R180"/>
+<smd name="P$9" x="2.15" y="-0.25" dx="1.35" dy="0.2" layer="1" rot="R180"/>
+<smd name="P$8" x="2.15" y="-0.75" dx="1.35" dy="0.2" layer="1" rot="R180"/>
+<smd name="P$7" x="2.15" y="-1.25" dx="1.35" dy="0.2" layer="1" rot="R180"/>
+<smd name="P$11" x="2.15" y="0.75" dx="1.35" dy="0.2" layer="1" rot="R180"/>
+<smd name="P$12" x="2.15" y="1.25" dx="1.35" dy="0.2" layer="1" rot="R180"/>
+<smd name="P$21" x="-2.15" y="0.25" dx="1.35" dy="0.2" layer="1" rot="R180"/>
+<smd name="P$22" x="-2.15" y="-0.25" dx="1.35" dy="0.2" layer="1" rot="R180"/>
+<smd name="P$23" x="-2.15" y="-0.75" dx="1.35" dy="0.2" layer="1" rot="R180"/>
+<smd name="P$24" x="-2.15" y="-1.25" dx="1.35" dy="0.2" layer="1" rot="R180"/>
+<smd name="P$20" x="-2.15" y="0.75" dx="1.35" dy="0.2" layer="1" rot="R180"/>
+<smd name="P$19" x="-2.15" y="1.25" dx="1.35" dy="0.2" layer="1" rot="R180"/>
+<circle x="-1.75" y="-1.75" radius="0.14141875" width="0.1" layer="21"/>
+<wire x1="-3" y1="3" x2="-3" y2="-3" width="0.127" layer="21"/>
+<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.127" layer="21"/>
+<wire x1="3" y1="-3" x2="3" y2="3" width="0.127" layer="21"/>
+<wire x1="3" y1="3" x2="-3" y2="3" width="0.127" layer="21"/>
+<text x="-2.2" y="3.2" size="1.016" layer="25">&gt;Name</text>
+<text x="-1.5" y="-3.9" size="0.6096" layer="27">&gt;Value</text>
+</package>
+</packages>
+<symbols>
+<symbol name="LSM9DS0">
+<pin name="P$1" x="-12.7" y="-20.32" length="middle" rot="R90"/>
+<pin name="P$2" x="-7.62" y="-20.32" length="middle" rot="R90"/>
+<pin name="P$3" x="-2.54" y="-20.32" length="middle" rot="R90"/>
+<pin name="P$4" x="2.54" y="-20.32" length="middle" rot="R90"/>
+<pin name="P$5" x="7.62" y="-20.32" length="middle" rot="R90"/>
+<pin name="P$6" x="12.7" y="-20.32" length="middle" rot="R90"/>
+<pin name="P$7" x="27.94" y="-12.7" length="middle" rot="R180"/>
+<pin name="P$8" x="27.94" y="-7.62" length="middle" rot="R180"/>
+<pin name="P$9" x="27.94" y="-2.54" length="middle" rot="R180"/>
+<pin name="P$10" x="27.94" y="2.54" length="middle" rot="R180"/>
+<pin name="P$11" x="27.94" y="7.62" length="middle" rot="R180"/>
+<pin name="P$12" x="27.94" y="12.7" length="middle" rot="R180"/>
+<pin name="P$13" x="12.7" y="22.86" length="middle" rot="R270"/>
+<pin name="P$14" x="7.62" y="22.86" length="middle" rot="R270"/>
+<pin name="P$15" x="2.54" y="22.86" length="middle" rot="R270"/>
+<pin name="P$16" x="-2.54" y="22.86" length="middle" rot="R270"/>
+<pin name="P$17" x="-7.62" y="22.86" length="middle" rot="R270"/>
+<pin name="P$18" x="-12.7" y="22.86" length="middle" rot="R270"/>
+<pin name="P$19" x="-27.94" y="12.7" length="middle"/>
+<pin name="P$20" x="-27.94" y="7.62" length="middle"/>
+<pin name="P$21" x="-27.94" y="2.54" length="middle"/>
+<pin name="P$22" x="-27.94" y="-2.54" length="middle"/>
+<pin name="P$23" x="-27.94" y="-7.62" length="middle"/>
+<pin name="P$24" x="-27.94" y="-12.7" length="middle"/>
+<wire x1="-22.86" y1="17.78" x2="-22.86" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="-15.24" x2="22.86" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-15.24" x2="22.86" y2="17.78" width="0.254" layer="94"/>
+<wire x1="22.86" y1="17.78" x2="-22.86" y2="17.78" width="0.254" layer="94"/>
+<text x="17.78" y="20.32" size="1.27" layer="95">&gt;NAME</text>
+<text x="17.78" y="-20.32" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LSM9DS0">
+<gates>
+<gate name="IMU" symbol="LSM9DS0" x="0" y="0"/>
+</gates>
+<devices>
+<device name="MAIN" package="LSM9DS0">
+<connects>
+<connect gate="IMU" pin="P$1" pad="P$1"/>
+<connect gate="IMU" pin="P$10" pad="P$10"/>
+<connect gate="IMU" pin="P$11" pad="P$11"/>
+<connect gate="IMU" pin="P$12" pad="P$12"/>
+<connect gate="IMU" pin="P$13" pad="P$13"/>
+<connect gate="IMU" pin="P$14" pad="P$14"/>
+<connect gate="IMU" pin="P$15" pad="P$15"/>
+<connect gate="IMU" pin="P$16" pad="P$16"/>
+<connect gate="IMU" pin="P$17" pad="P$17"/>
+<connect gate="IMU" pin="P$18" pad="P$18"/>
+<connect gate="IMU" pin="P$19" pad="P$19"/>
+<connect gate="IMU" pin="P$2" pad="P$2"/>
+<connect gate="IMU" pin="P$20" pad="P$20"/>
+<connect gate="IMU" pin="P$21" pad="P$21"/>
+<connect gate="IMU" pin="P$22" pad="P$22"/>
+<connect gate="IMU" pin="P$23" pad="P$23"/>
+<connect gate="IMU" pin="P$24" pad="P$24"/>
+<connect gate="IMU" pin="P$3" pad="P$3"/>
+<connect gate="IMU" pin="P$4" pad="P$4"/>
+<connect gate="IMU" pin="P$5" pad="P$5"/>
+<connect gate="IMU" pin="P$6" pad="P$6"/>
+<connect gate="IMU" pin="P$7" pad="P$7"/>
+<connect gate="IMU" pin="P$8" pad="P$8"/>
+<connect gate="IMU" pin="P$9" pad="P$9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1220,6 +1335,19 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <part name="LED3" library="Lab5" deviceset="LED" device="CHIP-LED0805" value="RED"/>
 <part name="GND20" library="Lab5" deviceset="GND" device=""/>
 <part name="R4" library="Lab5" deviceset="R-US_" device="R0805" value="1k"/>
+<part name="U$2" library="lab4" deviceset="LSM9DS0" device="MAIN"/>
+<part name="P+4" library="Lab5" deviceset="3.3V" device="" value="3V"/>
+<part name="GND21" library="Lab5" deviceset="GND" device=""/>
+<part name="C12" library="Lab5" deviceset="C-US" device="C0805" value="4.7 uF"/>
+<part name="GND22" library="Lab5" deviceset="GND" device=""/>
+<part name="C13" library="Lab5" deviceset="C-US" device="C0805" value="0.22 uF"/>
+<part name="C14" library="Lab5" deviceset="C-US" device="C0805" value="10 uF"/>
+<part name="C15" library="Lab5" deviceset="C-US" device="C0805" value="100 nF"/>
+<part name="GND23" library="Lab5" deviceset="GND" device=""/>
+<part name="GND24" library="Lab5" deviceset="GND" device=""/>
+<part name="R5" library="Lab5" deviceset="R-US_" device="R0805" value="10k"/>
+<part name="R6" library="Lab5" deviceset="R-US_" device="R0805" value="10k"/>
+<part name="P+5" library="Lab5" deviceset="3.3V" device="" value="3V"/>
 </parts>
 <sheets>
 <sheet>
@@ -1278,6 +1406,19 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <instance part="LED3" gate="G$1" x="-30.48" y="43.18" rot="MR0"/>
 <instance part="GND20" gate="1" x="-30.48" y="30.48"/>
 <instance part="R4" gate="G$1" x="-38.1" y="53.34" rot="R180"/>
+<instance part="U$2" gate="IMU" x="-165.1" y="7.62"/>
+<instance part="P+4" gate="G$1" x="-177.8" y="48.26"/>
+<instance part="GND21" gate="1" x="-172.72" y="-25.4"/>
+<instance part="C12" gate="G$1" x="-119.38" y="-12.7" rot="R180"/>
+<instance part="GND22" gate="1" x="-119.38" y="-20.32"/>
+<instance part="C13" gate="G$1" x="-116.84" y="5.08" rot="R180"/>
+<instance part="C14" gate="G$1" x="-160.02" y="45.72" rot="R180"/>
+<instance part="C15" gate="G$1" x="-142.24" y="45.72" rot="R180"/>
+<instance part="GND23" gate="1" x="-152.4" y="58.42" rot="R180"/>
+<instance part="GND24" gate="1" x="-198.12" y="-25.4"/>
+<instance part="R5" gate="G$1" x="-210.82" y="15.24" rot="R180"/>
+<instance part="R6" gate="G$1" x="-210.82" y="22.86" rot="R180"/>
+<instance part="P+5" gate="G$1" x="-223.52" y="27.94"/>
 </instances>
 <busses>
 </busses>
@@ -1396,6 +1537,51 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <pinref part="LED3" gate="G$1" pin="C"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 <wire x1="-30.48" y1="38.1" x2="-30.48" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="IMU" pin="P$6"/>
+<wire x1="-152.4" y1="-12.7" x2="-152.4" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="IMU" pin="P$5"/>
+<wire x1="-157.48" y1="-12.7" x2="-157.48" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-152.4" y1="-17.78" x2="-157.48" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="IMU" pin="P$4"/>
+<wire x1="-162.56" y1="-12.7" x2="-162.56" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-157.48" y1="-17.78" x2="-162.56" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="-157.48" y="-17.78"/>
+<pinref part="U$2" gate="IMU" pin="P$3"/>
+<wire x1="-167.64" y1="-12.7" x2="-167.64" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="-17.78" x2="-167.64" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="-162.56" y="-17.78"/>
+<pinref part="U$2" gate="IMU" pin="P$2"/>
+<wire x1="-172.72" y1="-12.7" x2="-172.72" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-167.64" y1="-17.78" x2="-172.72" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="-167.64" y="-17.78"/>
+<pinref part="GND21" gate="1" pin="GND"/>
+<wire x1="-172.72" y1="-17.78" x2="-172.72" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="-172.72" y="-17.78"/>
+</segment>
+<segment>
+<pinref part="C12" gate="G$1" pin="1"/>
+<pinref part="GND22" gate="1" pin="GND"/>
+<wire x1="-119.38" y1="-15.24" x2="-119.38" y2="-17.78" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C15" gate="G$1" pin="2"/>
+<pinref part="C14" gate="G$1" pin="2"/>
+<wire x1="-142.24" y1="50.8" x2="-152.4" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-152.4" y1="50.8" x2="-160.02" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-152.4" y1="50.8" x2="-152.4" y2="55.88" width="0.1524" layer="91"/>
+<junction x="-152.4" y="50.8"/>
+<pinref part="GND23" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="IMU" pin="P$23"/>
+<pinref part="U$2" gate="IMU" pin="P$22"/>
+<wire x1="-193.04" y1="0" x2="-193.04" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-193.04" y1="5.08" x2="-198.12" y2="5.08" width="0.1524" layer="91"/>
+<junction x="-193.04" y="5.08"/>
+<wire x1="-198.12" y1="5.08" x2="-198.12" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="GND24" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="A7" class="0">
@@ -1698,12 +1884,22 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <wire x1="-83.82" y1="-25.4" x2="-88.9" y2="-25.4" width="0.1524" layer="91"/>
 <label x="-88.9" y="-25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="IMU" pin="P$24"/>
+<wire x1="-193.04" y1="-5.08" x2="-200.66" y2="-5.08" width="0.1524" layer="91"/>
+<label x="-200.66" y="-5.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PD0(SCL/INT0)"/>
 <wire x1="-83.82" y1="-22.86" x2="-88.9" y2="-22.86" width="0.1524" layer="91"/>
 <label x="-88.9" y="-22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="IMU" pin="P$21"/>
+<wire x1="-193.04" y1="10.16" x2="-200.66" y2="10.16" width="0.1524" layer="91"/>
+<label x="-200.66" y="10.16" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PB7" class="0">
@@ -1836,6 +2032,41 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <wire x1="-45.72" y1="53.34" x2="-43.18" y2="53.34" width="0.1524" layer="91"/>
 <junction x="-45.72" y="53.34"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="IMU" pin="P$18"/>
+<wire x1="-177.8" y1="30.48" x2="-177.8" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="P+4" gate="G$1" pin="3.3V"/>
+<pinref part="U$2" gate="IMU" pin="P$15"/>
+<pinref part="U$2" gate="IMU" pin="P$16"/>
+<wire x1="-177.8" y1="38.1" x2="-177.8" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="30.48" x2="-167.64" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="IMU" pin="P$17"/>
+<wire x1="-167.64" y1="30.48" x2="-172.72" y2="30.48" width="0.1524" layer="91"/>
+<junction x="-167.64" y="30.48"/>
+<wire x1="-172.72" y1="30.48" x2="-177.8" y2="30.48" width="0.1524" layer="91"/>
+<junction x="-172.72" y="30.48"/>
+<junction x="-177.8" y="30.48"/>
+<wire x1="-177.8" y1="38.1" x2="-152.4" y2="38.1" width="0.1524" layer="91"/>
+<junction x="-177.8" y="38.1"/>
+<wire x1="-152.4" y1="38.1" x2="-152.4" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="C14" gate="G$1" pin="1"/>
+<wire x1="-152.4" y1="43.18" x2="-160.02" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="C15" gate="G$1" pin="1"/>
+<wire x1="-152.4" y1="43.18" x2="-142.24" y2="43.18" width="0.1524" layer="91"/>
+<junction x="-152.4" y="43.18"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="-215.9" y1="22.86" x2="-218.44" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-218.44" y1="22.86" x2="-218.44" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="-218.44" y1="20.32" x2="-218.44" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-218.44" y1="15.24" x2="-215.9" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-218.44" y1="20.32" x2="-223.52" y2="20.32" width="0.1524" layer="91"/>
+<junction x="-218.44" y="20.32"/>
+<wire x1="-223.52" y1="20.32" x2="-223.52" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="P+5" gate="G$1" pin="3.3V"/>
+</segment>
 </net>
 <net name="RSTON" class="0">
 <segment>
@@ -1923,6 +2154,48 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <wire x1="-33.02" y1="53.34" x2="-30.48" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="LED3" gate="G$1" pin="A"/>
 <wire x1="-30.48" y1="53.34" x2="-30.48" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="U$2" gate="IMU" pin="P$7"/>
+<wire x1="-137.16" y1="-5.08" x2="-119.38" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="C12" gate="G$1" pin="2"/>
+<wire x1="-119.38" y1="-5.08" x2="-119.38" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="U$2" gate="IMU" pin="P$9"/>
+<wire x1="-137.16" y1="5.08" x2="-129.54" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="5.08" x2="-129.54" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="C13" gate="G$1" pin="2"/>
+<wire x1="-116.84" y1="10.16" x2="-116.84" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="12.7" x2="-129.54" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="U$2" gate="IMU" pin="P$8"/>
+<wire x1="-137.16" y1="0" x2="-116.84" y2="0" width="0.1524" layer="91"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<wire x1="-116.84" y1="0" x2="-116.84" y2="2.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="U$2" gate="IMU" pin="P$20"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="-193.04" y1="15.24" x2="-205.74" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="U$2" gate="IMU" pin="P$19"/>
+<wire x1="-193.04" y1="20.32" x2="-198.12" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-198.12" y1="20.32" x2="-198.12" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="-198.12" y1="22.86" x2="-205.74" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
