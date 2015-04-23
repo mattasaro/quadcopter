@@ -1480,8 +1480,8 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <part name="A1" library="Lab5" deviceset="ANTENNA2" device="SMD5"/>
 <part name="LED1" library="Lab5" deviceset="LED" device="CHIP-LED0805" value="GREEN"/>
 <part name="LED2" library="Lab5" deviceset="LED" device="CHIP-LED0805" value="GREEN"/>
-<part name="R2" library="Lab5" deviceset="R-US_" device="R0805" value="330"/>
-<part name="R3" library="Lab5" deviceset="R-US_" device="R0805" value="330"/>
+<part name="R2" library="Lab5" deviceset="R-US_" device="R0805" value="300"/>
+<part name="R3" library="Lab5" deviceset="R-US_" device="R0805" value="300"/>
 <part name="GND10" library="Lab5" deviceset="GND" device=""/>
 <part name="GND11" library="Lab5" deviceset="GND" device=""/>
 <part name="JP1" library="Lab5" deviceset="FTDI_BASIC" device="PTH"/>
@@ -1576,10 +1576,10 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <instance part="C2" gate="G$1" x="86.36" y="-73.66"/>
 <instance part="C3" gate="G$1" x="101.6" y="-73.66"/>
 <instance part="C4" gate="G$1" x="111.76" y="-73.66"/>
-<instance part="GND3" gate="1" x="73.66" y="-81.28"/>
-<instance part="GND4" gate="1" x="86.36" y="-81.28"/>
-<instance part="GND5" gate="1" x="101.6" y="-81.28"/>
-<instance part="GND6" gate="1" x="111.76" y="-81.28"/>
+<instance part="GND3" gate="1" x="73.66" y="-83.82"/>
+<instance part="GND4" gate="1" x="86.36" y="-83.82"/>
+<instance part="GND5" gate="1" x="101.6" y="-83.82"/>
+<instance part="GND6" gate="1" x="111.76" y="-83.82"/>
 <instance part="Y1" gate="G$1" x="81.28" y="-66.04"/>
 <instance part="P+1" gate="G$1" x="63.5" y="-15.24"/>
 <instance part="P+2" gate="G$1" x="73.66" y="-15.24"/>
@@ -1691,18 +1691,22 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="73.66" y1="-81.28" x2="73.66" y2="-78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="86.36" y1="-81.28" x2="86.36" y2="-78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="101.6" y1="-81.28" x2="101.6" y2="-78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="111.76" y1="-81.28" x2="111.76" y2="-78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
