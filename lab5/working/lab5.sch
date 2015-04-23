@@ -1642,15 +1642,17 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <net name="GND" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PADDLE"/>
-<wire x1="78.74" y1="-22.86" x2="83.82" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="-22.86" x2="83.82" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="U1" gate="G$1" pin="DVSS"/>
-<wire x1="78.74" y1="-20.32" x2="83.82" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="-20.32" x2="83.82" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="AVSS"/>
+<junction x="83.82" y="-20.32"/>
 <wire x1="78.74" y1="-17.78" x2="83.82" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="-17.78" x2="83.82" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="-20.32" x2="83.82" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="83.82" y="-22.86"/>
+<wire x1="83.82" y1="-20.32" x2="78.74" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="-22.86" x2="78.74" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="AVSS_RFP"/>
@@ -2075,11 +2077,6 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <pinref part="U1" gate="G$1" pin="PE1(TXD0)"/>
 <wire x1="22.86" y1="10.16" x2="17.78" y2="10.16" width="0.1524" layer="91"/>
 <label x="17.78" y="10.16" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="JP1" gate="G$1" pin="1"/>
-<pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="114.3" x2="73.66" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="2"/>
@@ -2573,6 +2570,13 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <pinref part="U$14" gate="MOSFET" pin="D3"/>
 <wire x1="-139.7" y1="-71.12" x2="-139.7" y2="-76.2" width="0.1524" layer="91"/>
 <junction x="-139.7" y="-71.12"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="C9" gate="G$1" pin="1"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="114.3" x2="60.96" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
