@@ -1568,6 +1568,7 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <part name="GND26" library="Lab5" deviceset="GND" device=""/>
 <part name="R10" library="Lab5" deviceset="R-US_" device="R0805" value="10k"/>
 <part name="Q4" library="Kirt-Lab4" deviceset="FET" device=""/>
+<part name="GND30" library="Lab5" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1682,6 +1683,7 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <instance part="GND26" gate="1" x="-73.66" y="-132.08"/>
 <instance part="R10" gate="G$1" x="-83.82" y="-121.92" rot="R180"/>
 <instance part="Q4" gate="G$1" x="-73.66" y="-96.52"/>
+<instance part="GND30" gate="1" x="63.5" y="-73.66"/>
 </instances>
 <busses>
 </busses>
@@ -1892,6 +1894,12 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <junction x="-73.66" y="-121.92"/>
 <pinref part="Q4" gate="G$1" pin="P$2"/>
 <wire x1="-73.66" y1="-107.95" x2="-73.66" y2="-121.92" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="CLKI"/>
+<wire x1="58.42" y1="-68.58" x2="63.5" y2="-68.58" width="0.1524" layer="91"/>
+<pinref part="GND30" gate="1" pin="GND"/>
+<wire x1="63.5" y1="-68.58" x2="63.5" y2="-71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
