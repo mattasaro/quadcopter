@@ -1505,8 +1505,8 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <part name="A1" library="Lab5" deviceset="ANTENNA2" device="SMD5"/>
 <part name="LED1" library="Lab5" deviceset="LED" device="CHIP-LED0805" value="GREEN"/>
 <part name="LED2" library="Lab5" deviceset="LED" device="CHIP-LED0805" value="GREEN"/>
-<part name="R2" library="Lab5" deviceset="R-US_" device="R0805" value="300"/>
-<part name="R3" library="Lab5" deviceset="R-US_" device="R0805" value="300"/>
+<part name="R2" library="Lab5" deviceset="R-US_" device="R0805" value="270"/>
+<part name="R3" library="Lab5" deviceset="R-US_" device="R0805" value="270"/>
 <part name="GND10" library="Lab5" deviceset="GND" device=""/>
 <part name="GND11" library="Lab5" deviceset="GND" device=""/>
 <part name="JP1" library="Lab5" deviceset="FTDI_BASIC" device="PTH"/>
@@ -1530,7 +1530,7 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <part name="P+3" library="Lab5" deviceset="3.3V" device="" value="3V"/>
 <part name="LED3" library="Lab5" deviceset="LED" device="CHIP-LED0805" value="RED"/>
 <part name="GND20" library="Lab5" deviceset="GND" device=""/>
-<part name="R4" library="Lab5" deviceset="R-US_" device="R0805" value="1k"/>
+<part name="R4" library="Lab5" deviceset="R-US_" device="R0805" value="680"/>
 <part name="U$2" library="lab4" deviceset="LSM9DS0" device="MAIN"/>
 <part name="P+4" library="Lab5" deviceset="3.3V" device="" value="3V"/>
 <part name="GND21" library="Lab5" deviceset="GND" device=""/>
@@ -1657,7 +1657,7 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <instance part="C14" gate="G$1" x="-165.1" y="114.3" rot="R180"/>
 <instance part="C15" gate="G$1" x="-147.32" y="114.3" rot="R180"/>
 <instance part="GND23" gate="1" x="-157.48" y="127" rot="R180"/>
-<instance part="GND24" gate="1" x="-203.2" y="43.18"/>
+<instance part="GND24" gate="1" x="-220.98" y="58.42"/>
 <instance part="R5" gate="G$1" x="-215.9" y="83.82" rot="R180"/>
 <instance part="R6" gate="G$1" x="-215.9" y="91.44" rot="R180"/>
 <instance part="P+5" gate="G$1" x="-228.6" y="96.52"/>
@@ -1855,9 +1855,9 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <pinref part="U$2" gate="IMU" pin="P$23"/>
 <pinref part="U$2" gate="IMU" pin="P$22"/>
 <wire x1="-198.12" y1="68.58" x2="-198.12" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="-198.12" y1="73.66" x2="-203.2" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-198.12" y1="73.66" x2="-220.98" y2="73.66" width="0.1524" layer="91"/>
 <junction x="-198.12" y="73.66"/>
-<wire x1="-203.2" y1="73.66" x2="-203.2" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-220.98" y1="73.66" x2="-220.98" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="GND24" gate="1" pin="GND"/>
 </segment>
 <segment>
