@@ -1479,6 +1479,10 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="RFSIG" width="0.4572" drill="0">
+</class>
+<class number="2" name="HIGHCURRENT" width="0.4572" drill="0">
+</class>
 </classes>
 <parts>
 <part name="U1" library="Lab5" deviceset="ATMEGA128RFA1" device=""/>
@@ -2273,7 +2277,7 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <wire x1="111.76" y1="-33.02" x2="116.84" y2="-33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="N$4" class="1">
 <segment>
 <pinref part="B1" gate="G$1" pin="IN"/>
 <wire x1="124.46" y1="-25.4" x2="124.46" y2="-20.32" width="0.1524" layer="91"/>
@@ -2308,7 +2312,7 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <pinref part="S2" gate="1" pin="P"/>
 </segment>
 </net>
-<net name="VBAT" class="0">
+<net name="VBAT" class="2">
 <segment>
 <pinref part="S2" gate="1" pin="O"/>
 <pinref part="U$1" gate="G$1" pin="IN"/>
@@ -2423,7 +2427,7 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <wire x1="-203.2" y1="91.44" x2="-210.82" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="N$16" class="2">
 <segment>
 <pinref part="JP7" gate="G$1" pin="1"/>
 <wire x1="-213.36" y1="-55.88" x2="-220.98" y2="-55.88" width="0.1524" layer="91"/>
@@ -2443,7 +2447,7 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <wire x1="27.94" y1="50.8" x2="15.24" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="N$3" class="2">
 <segment>
 <pinref part="D1" gate="G$1" pin="P$2"/>
 <pinref part="Q2" gate="G$1" pin="P$3"/>
@@ -2455,7 +2459,7 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <wire x1="-175.26" y1="-71.12" x2="-175.26" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="N$12" class="2">
 <segment>
 <wire x1="-83.82" y1="-71.12" x2="-83.82" y2="-58.42" width="0.1524" layer="91"/>
 <pinref part="JP4" gate="G$1" pin="1"/>
@@ -2467,7 +2471,7 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <junction x="-73.66" y="-71.12"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="N$15" class="2">
 <segment>
 <pinref part="Q3" gate="G$1" pin="P$3"/>
 <pinref part="D2" gate="G$1" pin="P$2"/>
